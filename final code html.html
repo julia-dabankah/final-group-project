@@ -8,5 +8,263 @@
     <title>CSS Exercise</title>
     <link rel="stylesheet" href="./css/final.css">
   </head>
-
+  <body>
  
+<div id="topnavigation">
+<div class="topnavigation">
+<a href="/"> home</a>
+<a href="/ask"> message</a>
+<a href="/archive"> archive</a>
+</div>
+<div class="search">
+<form action="/search" method="get" class="searchbox">
+<input type="text" name="q" value="{SearchQuery}" id="sf"/>
+<input type="submit" value="Search" id="sb"/>
+</form>
+</div></div>
+ 
+<div id="top">
+<div class="title">{text:title}</div>
+<div class="subtitle">{text:subtitle}</div>
+</div>
+ 
+<div id="navigation">
+<div class="navigation">
+<a href="{text:link 1 url}"> {text:link 1}</a>
+<a href="{text:link 2 url}"> {text:link 2}</a>
+<a href="{text:link 3 url}"> {text:link 3}</a>
+<a href="{text:link 4 url}"> {text:link 4}</a>
+<a href="{text:link 5 url}"> {text:link 5}</a>
+ 
+{block:Ifshowfacebookicon}<a href="{text:facebook url}" target="_blank"><i class="fab fa-facebook-f"></i></a>{/block:Ifshowfacebookicon}
+ 
+{block:Ifshowtwittericon}<a href="{text:twitter url}" target="_blank"><i class="fab fa-twitter"></i></a>{/block:Ifshowtwittericon}
+ 
+{block:Ifshowinstagramicon}<a href="{text:instagram url}" target="_blank"><i class="fab fa-instagram"></i></a>{/block:Ifshowinstagramicon}
+ 
+{block:Ifshowappleicon}<a href="{text:apple url}" target="_blank"><i class="fab fa-apple"></i></a>{/block:Ifshowappleicon}
+ 
+{block:Ifshowspotifyicon}<a href="{text:spotify url}" target="_blank"><i class="fab fa-spotify"></i></a>{/block:Ifshowspotifyicon}
+ 
+{block:Ifshowimdbicon}<a href="{text:imdb url}" target="_blank"><i class="fab fa-imdb"></i></a>{/block:Ifshowimdbicon}
+</div></div>
+ 
+<div id="header"></div>
+ 
+<div id="latestposts">
+<div class='ji-tumblr-photos'><a id='ji-tumblr-url-widgy-1' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-widgy-1' src='' alt='' /></a><a id='ji-tumblr-url-widgy-2' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-widgy-2' src='' alt='' /></a><a id='ji-tumblr-url-widgy-3' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-widgy-3' src='' alt='' /></a><a id='ji-tumblr-url-widgy-4' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-widgy-4' src='' alt='' /></a><a id='ji-tumblr-url-widgy-5' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-widgy-5' src='' alt='' /></a><a id='ji-tumblr-url-widgy-6' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-widgy-6' src='' alt='' /></a><a id='ji-tumblr-url-widgy-7' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-widgy-7' src='' alt='' /></a><a id='ji-tumblr-url-widgy-8' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-widgy-8' src='' alt='' /></a><a id='ji-tumblr-url-widgy-9' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-widgy-9' src='' alt='' /></a><a id='ji-tumblr-url-widgy-10' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-widgy-10' src='' alt='' /></a><a id='ji-tumblr-url-widgy-11' href=''><img border='0' style='margin:3px' id='ji-tumblr-photo-widgy-11' src='' alt='' /></a>
+</div>
+<script type='text/javascript' src='https://{text:blog username}.tumblr.com/api/read/json?number=11&type=photo'></script>
+<script type='text/javascript'>
+document.getElementById('ji-tumblr-photo-widgy-1').setAttribute('src', tumblr_api_read.posts[0]['photo-url-75']);
+document.getElementById('ji-tumblr-url-widgy-1').setAttribute('href', tumblr_api_read.posts[0]['url-with-slug']);
+document.getElementById('ji-tumblr-photo-widgy-2').setAttribute('src', tumblr_api_read.posts[1]['photo-url-75']);
+document.getElementById('ji-tumblr-url-widgy-2').setAttribute('href', tumblr_api_read.posts[1]['url-with-slug']);
+document.getElementById('ji-tumblr-photo-widgy-3').setAttribute('src', tumblr_api_read.posts[2]['photo-url-75']);
+document.getElementById('ji-tumblr-url-widgy-3').setAttribute('href', tumblr_api_read.posts[2]['url-with-slug']);
+document.getElementById('ji-tumblr-photo-widgy-4').setAttribute('src', tumblr_api_read.posts[3]['photo-url-75']);
+document.getElementById('ji-tumblr-url-widgy-4').setAttribute('href', tumblr_api_read.posts[3]['url-with-slug']);
+document.getElementById('ji-tumblr-photo-widgy-5').setAttribute('src', tumblr_api_read.posts[4]['photo-url-75']);
+document.getElementById('ji-tumblr-url-widgy-5').setAttribute('href', tumblr_api_read.posts[4]['url-with-slug']);
+document.getElementById('ji-tumblr-photo-widgy-6').setAttribute('src', tumblr_api_read.posts[5]['photo-url-75']);
+document.getElementById('ji-tumblr-url-widgy-6').setAttribute('href', tumblr_api_read.posts[5]['url-with-slug']);
+document.getElementById('ji-tumblr-photo-widgy-7').setAttribute('src', tumblr_api_read.posts[6]['photo-url-75']);
+document.getElementById('ji-tumblr-url-widgy-7').setAttribute('href', tumblr_api_read.posts[6]['url-with-slug']);
+document.getElementById('ji-tumblr-photo-widgy-8').setAttribute('src', tumblr_api_read.posts[7]['photo-url-75']);
+document.getElementById('ji-tumblr-url-widgy-8').setAttribute('href', tumblr_api_read.posts[7]['url-with-slug']);
+document.getElementById('ji-tumblr-photo-widgy-9').setAttribute('src', tumblr_api_read.posts[8]['photo-url-75']);
+document.getElementById('ji-tumblr-url-widgy-9').setAttribute('href', tumblr_api_read.posts[8]['url-with-slug']);
+document.getElementById('ji-tumblr-photo-widgy-10').setAttribute('src', tumblr_api_read.posts[9]['photo-url-75']);
+document.getElementById('ji-tumblr-url-widgy-10').setAttribute('href', tumblr_api_read.posts[9]['url-with-slug']);
+document.getElementById('ji-tumblr-photo-widgy-11').setAttribute('src', tumblr_api_read.posts[10]['photo-url-75']);
+document.getElementById('ji-tumblr-url-widgy-11').setAttribute('href', tumblr_api_read.posts[10]['url-with-slug']);
+</script>
+</div>
+ 
+<div id="container">
+<div id="sidebar">
+ 
+<!-------------------------------WELCOME------------------------------->
+<div class="sidebarimg"><img src="{image:sidebar image}"/></div>
+ 
+<div class="welcome">      
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius est sed dolor faucibus efficitur. Donec lacinia nisl dolor, quis aliquam elit blandit quis. Nam id pharetra lectus. Fusce non gravida dui. Aliquam quis nulla aliquet, ultrices purus in, tincidunt nulla. Integer vel egestas mauris, at rutrum turpis. Morbi eget mi id eros bibendum fringilla. Pellentesque auctor augue et ullamcorper convallis. Nunc laoreet eu enim sit amet cursus.
+</div>
+ 
+<!-------------------------------EVENTS------------------------------->
+<div class="category">Events</div>
+<div class="about">
+<p><date>03.20.19</date> <span><b>Sweetener World Tour</b>: Boston (USA)</span></p>
+<p><date>03.22.19</date> <span><b>Sweetener World Tour</b>: Buffalo (USA)</span></p>
+<p><date>03.25.19</date> <span><b>Sweetener World Tour</b>: Washington (USA)</span></p>
+<p><date>03.26.19</date> <span><b>Sweetener World Tour</b>: Philadelphia (USA)</span></p>
+</div>
+ 
+<!-------------------------------INSTAGRAM------------------------------->
+<div class="category">Instagram</div>
+<div class="about">
+<!-- InstaWidget -->
+<a href="https://instawidget.net/v/user/arianagrande" id="link-6e89f95880d60202d55aba19f2124cce3344bca9e5ed8d121cfe4f5ddfabe8cb">@arianagrande</a>
+<script src="https://instawidget.net/js/instawidget.js?u=6e89f95880d60202d55aba19f2124cce3344bca9e5ed8d121cfe4f5ddfabe8cb&width=430px"></script>
+</div>
+ 
+<!-------------------------------PROJECTS------------------------------->
+<div class="category">Projects</div>
+<div class="projects">
+ 
+<!----------project 1---------->
+<table>
+<td>
+<img src="{image:project one}">
+</td>
+<td>
+<p><span>Thank U Next</span> <i>album</i></p>
+<p><b>Release date:</b> February 8, 2019</p>
+<p><b>Status:</b> Out now!</p>
+<p><b>Links:</b> <a href="/" target="_blank"><u>buy</u></a> | <a href="/" target="_blank"><u>related posts</u></a></p>
+</td>
+</table>
+ 
+<!----------project 2---------->
+<table>
+<td>
+<img src="{image:project two}">
+</td>
+<td>
+<p><span>Title</span> <i>subtitle</i></p>
+<p><b>Release date:</b> /</p>
+<p><b>Status:</b> /</p>
+<p><b>Links:</b> <a href="/" target="_blank"><u>buy</u></a> | <a href="/" target="_blank"><u>related posts</u></a></p>
+</td>
+</table>
+ 
+<!----------project 3---------->
+<table>
+<td>
+<img src="{image:project three}">
+</td>
+<td>
+<p><span>Title</span> <i>subtitle</i></p>
+<p><b>Release date:</b> /</p>
+<p><b>Status:</b> /</p>
+<p><b>Links:</b> <a href="/" target="_blank"><u>buy</u></a> | <a href="/" target="_blank"><u>related posts</u></a></p>
+</td>
+</table>
+</div>
+ 
+<!-------------------------------AFFILIATES------------------------------->
+<div class="category">Affiliates</div>
+<div class="affiliates">
+<a href="/" target="_blank" title="title"> <img src="https://placehold.it/50x50"/></a>
+<a href="/" target="_blank" title="title"> <img src="https://placehold.it/50x50"/></a>
+<a href="/" target="_blank" title="title"> <img src="https://placehold.it/50x50"/></a>
+<a href="/" target="_blank" title="title"> <img src="https://placehold.it/50x50"/></a>
+<a href="/" target="_blank" title="title"> <img src="https://placehold.it/50x50"/></a>
+<a href="/" target="_blank" title="title"> <img src="https://placehold.it/50x50"/></a>
+<a href="/" target="_blank" title="title"> <img src="https://placehold.it/50x50"/></a>
+<a href="/" target="_blank" title="title"> <img src="https://placehold.it/50x50"/></a>
+<a href="/" target="_blank" title="title"> <img src="https://placehold.it/50x50"/></a>
+<a href="/" target="_blank" title="title"> <img src="https://placehold.it/50x50"/></a>
+<a href="/" target="_blank" title="title"> <img src="https://placehold.it/50x50"/></a>
+<a href="/" target="_blank" title="title"> <img src="https://placehold.it/50x50"/></a>
+</div>
+ 
+<!-------------------------------MEMBERS------------------------------->
+<div class="category">Members</div>
+<div class="affiliates">
+{block:GroupMembers}
+{block:GroupMember}
+<a href="{GroupMemberURL}" target="_blank" title="{GroupMemberName}"><img src="{GroupMemberPortraitURL-40}"></a>
+{/block:GroupMember}
+{/block:GroupMembers}
+</div>
+ 
+<!-------------------------------STATS------------------------------->
+<div class="category">Stats</div>
+<div class="stats">
+<p><span>about:</span> Ariana Grande</p>
+<p><span>established:</span> July 16, 2018</p>
+<p><span>admin:</span> /</p>
+<p><span>online:</span> / <!-- get your script at http://freehostedscripts.net/onlinecounter/ --></p>
+<p><span>visits:</span> / <!-- get your script at http://freehostedscripts.net/texthitcounter/ --></p>
+<blockquote>
+We claim no credit for any images posted unless stated otherwise. Images and information on this blog are copyright to their respectful owners. If there is any content appearing on this blog that belongs to you and you do not wish for it to appear on this blog, please message us with a link to say which post and it will be promptly removed.
+</blockquote>
+</div>
+ 
+</div>
+<!---------------------------POSTS--------------------------->
+ 
+<div id="entries">
+{block:Posts}
+ 
+<div class="info">
+{block:Date}
+<notes><a href="{Permalink}">{NoteCount}</a></notes> <span>Posted on {Month} {DayOfMonth}, {Year} by {PostAuthorName}</span>
+{/block:Date}
+</div>
+ 
+<div class="posts" id="{PostID}">
+ 
+{block:Text}
+<h1>{block:Title}{Title}{/block:Title}</h1>
+{Body}{/block:Text}
+ 
+{block:Photo}
+{LinkOpenTag}<center><img src="{PhotoURL-HighRes}"></center>{LinkCloseTag}
+{block:Caption}{Caption}{/block:Caption}
+{/block:Photo}
+ 
+{block:Photoset}
+<center>{Photoset}</center>
+{block:Caption}{Caption}{/block:Caption}
+{/block:Photoset}
+ 
+{block:Quote}
+<div class="quote">“{Quote}”</div>
+{block:Source}<div class="quotesource"> — {Source}</div>
+{/block:Source}    
+{/block:Quote}
+ 
+{block:Link}
+<h1><a href="{URL}" {Target}>{Name}</a></h1>
+{block:Description}{Description}{/block:Description}
+{/block:Link}
+ 
+{block:Chat}
+{block:Title}<h1>{Title}</h1>{/block:Title} <div class="chat"> {block:Lines} <li class="line {Alt}"> {block:Label} <span class="label"> {Label}</span> {/block:Label}{Line}</li> {/block:Lines}</div>
+{/block:Chat}
+ 
+{block:Audio}
+{block:AudioPlayer}
+<div class="audio">
+<div class="playbutton">{AudioPlayerGrey}</div>
+{block:AlbumArt}<div class="albumart"><img src="{AlbumArtURL}"></div>{/block:AlbumArt}
+<div class="trackinfo">
+<div class="trackname">
+{block:TrackName}{TrackName}{/block:TrackName}
+</div>
+<div class="artist">
+{block:Artist}{Artist}{/block:Artist}
+</div>
+<div class="album">
+{block:Album}{Album}{/block:Album}
+</div>
+</div></div>
+{block:Caption}{Caption}{/block:Caption}
+{/block:AudioPlayer}
+{/block:Audio}
+ 
+{block:Video}
+<center>{Video-500}</center>
+{block:Caption}{Caption}{/block:Caption}
+{/block:Video}
+ 
+{block:Answer}
+<div class="question">
+<center><img src="{AskerPortraitURL-30}"></center>
+<div class="asker">{Asker}:</div>
+<center>{Question}</center></div>
+<div class="answer">
+<blockquote>{Answer}</blockquote></div>
+{/block:Answer}
