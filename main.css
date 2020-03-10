@@ -15,7 +15,7 @@
 }
 
 .image1 {
-  position: absolute;
+  position: fixed;
   left: 650px; 
   top: 45px;
   
