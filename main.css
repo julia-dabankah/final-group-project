@@ -1,6 +1,8 @@
 /* BASIC STYLES */
 
 
+
+
 .headerstyle {
   font-size: 60px;
   text-align: center;
@@ -11,8 +13,19 @@
   position: fixed;
     left:0px;
     top:0px;
-    z-index:-1;
-    background-size: cover;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+ 
+}
+
+.background img{
+position: absolute;
+  top: 0px;
+  bottom:0px;
+  left:0px;
+  right:0px
+  
 }
 
 .image1 {
